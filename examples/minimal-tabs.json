@@ -1,0 +1,18 @@
+{
+  "windows": [
+    {
+      "groups": [
+        {
+          "group": { "title": "示例分组 · Example", "color": "blue" },
+          "tabs": [
+            { "url": "https://example.com" },
+            { "url": "https://example.org" }
+          ]
+        }
+      ],
+      "ungroupedTabs": [
+        { "url": "https://example.com/?source=chrome-tabs-exporter" }
+      ]
+    }
+  ]
+}

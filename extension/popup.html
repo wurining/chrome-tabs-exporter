@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chrome Tabs Exporter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="popup">
+  <main class="app">
+    <header class="brand app-header">
+      <img src="assets/icons/icon-48.png" alt="" width="32" height="32">
+      <div><h1>Chrome Tabs Exporter</h1><p data-i18n="tagline"></p></div>
+      <button id="settings" class="ghost-button" type="button"><span data-icon="settings"></span><span data-i18n="settingsLink"></span></button>
+    </header>
+    <section class="settings" data-i18n-label="exportSettings">
+      <div class="scope-field">
+        <h2 id="scope-label" data-i18n="scopeLabel"></h2>
+        <details id="window-picker" class="window-picker">
+          <summary aria-labelledby="scope-label window-selector-label window-selection-count"><span class="control-icon" data-icon="window"></span><span id="window-selector-label" data-i18n="selectWindows"></span><span id="window-selection-count" class="badge"></span><span class="picker-chevron" data-icon="chevron"></span></summary>
+          <div class="window-menu">
+            <label class="select-all"><input id="all-windows" type="checkbox"><span data-i18n="allWindows"></span></label>
+            <div id="window-list" class="window-list" data-i18n-label="selectWindows"></div>
+          </div>
+        </details>
+      </div>
+      <label class="include"><input id="include-ungrouped" class="switch" type="checkbox" role="switch" checked><span data-i18n="includeUngrouped"></span></label>
+    </section>
+    <section class="stats" data-i18n-label="selectedContent">
+      <span class="stats-caption" data-i18n="selectionSummary"></span>
+      <div><strong id="window-count">—</strong><span data-i18n="windowsLabel"></span></div>
+      <div><strong id="group-count">—</strong><span data-i18n="groupsLabel"></span></div>
+      <div><strong id="tab-count">—</strong><span data-i18n="tabsLabel"></span></div>
+    </section>
+    <section class="preview-section">
+      <div class="section-heading">
+        <h2 data-i18n="selectTabs"></h2>
+        <div class="selection-tools"><label class="select-all"><input id="all-tabs" type="checkbox"><span data-i18n="selectAll"></span></label><button id="refresh" class="ghost-button" type="button"><span data-icon="refresh"></span><span data-i18n="refresh"></span></button></div>
+      </div>
+      <div id="preview" class="preview" aria-busy="true" data-i18n-label="selectTabs"></div>
+      <p id="empty-message" class="selection-hint" hidden></p>
+    </section>
+    <section class="export-panel" data-i18n-label="exportActions">
+      <div class="export-actions">
+        <button id="export-markdown" class="primary" type="button" disabled><span data-icon="document"></span><span data-i18n="exportMarkdown"></span></button>
+        <button id="export-json" class="secondary" type="button" disabled><span data-icon="json"></span><span data-i18n="exportJson"></span></button>
+      </div>
+      <p class="privacy-note"><span data-icon="shield"></span><span data-i18n="privacyShort"></span></p>
+      <p id="status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+    <footer class="footer">
+      <a class="import-link" href="import.html" target="_blank" rel="noopener noreferrer"><span data-icon="import"></span><span data-i18n="importLink"></span></a>
+      <a href="https://github.com/wurining/chrome-tabs-exporter" target="_blank" rel="noopener noreferrer">GitHub</a>
+      <a href="about.html#privacy" target="_blank" rel="noopener noreferrer" data-i18n="privacyLink"></a>
+      <a href="about.html" target="_blank" rel="noopener noreferrer" data-i18n="supportLink"></a>
+    </footer>
+  </main>
+  <script type="module" src="popup.js"></script>
+</body>
+</html>

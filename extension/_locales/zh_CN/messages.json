@@ -1,0 +1,471 @@
+{
+  "extensionDescription": {
+    "message": "将 Chrome 标签页和分组导出为 Markdown 或 JSON，或从 JSON 恢复标签页。文件仅在本机处理。"
+  },
+  "tagline": {
+    "message": "将标签页与分组导出为 Markdown 或 JSON"
+  },
+  "exportSettings": {
+    "message": "导出设置"
+  },
+  "scopeLabel": {
+    "message": "导出范围"
+  },
+  "currentWindow": {
+    "message": "当前窗口"
+  },
+  "allWindows": {
+    "message": "全部窗口"
+  },
+  "includeUngrouped": {
+    "message": "包含未分组标签页"
+  },
+  "windowsLabel": {
+    "message": "窗口"
+  },
+  "groupsLabel": {
+    "message": "分组"
+  },
+  "tabsLabel": {
+    "message": "标签页"
+  },
+  "refresh": {
+    "message": "刷新"
+  },
+  "privacyShort": {
+    "message": "读取标签页标题与链接，仅在本机生成文件。"
+  },
+  "exportMarkdown": {
+    "message": "导出 Markdown"
+  },
+  "exportJson": {
+    "message": "导出 JSON"
+  },
+  "privacyLink": {
+    "message": "隐私政策"
+  },
+  "supportLink": {
+    "message": "支持开发者"
+  },
+  "loading": {
+    "message": "正在读取标签页与分组…"
+  },
+  "empty": {
+    "message": "所选窗口没有可选标签页，请选择其他窗口或包含未分组标签页。"
+  },
+  "readError": {
+    "message": "无法读取标签页，请刷新重试。"
+  },
+  "preparing": {
+    "message": "正在准备文件…"
+  },
+  "downloadStarted": {
+    "message": "已发起下载，请在 Chrome 下载列表查看保存结果。"
+  },
+  "downloadNotStarted": {
+    "message": "文件未保存。保存对话框可能已取消，或下载未能开始，请重试。"
+  },
+  "windowLabel": {
+    "message": "窗口 $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledGroup": {
+    "message": "未命名分组 $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledTab": {
+    "message": "未命名标签页"
+  },
+  "tabCount": {
+    "message": "$ARG1$ 个标签页",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "ungroupedLabel": {
+    "message": "未分组标签页"
+  },
+  "exportHeading": {
+    "message": "Chrome 标签页导出"
+  },
+  "exportTime": {
+    "message": "导出时间"
+  },
+  "colorLabel": {
+    "message": "颜色"
+  },
+  "collapsedLabel": {
+    "message": "已折叠"
+  },
+  "yes": {
+    "message": "是"
+  },
+  "no": {
+    "message": "否"
+  },
+  "aboutSubtitle": {
+    "message": "本地导出 · 开源 · MIT 许可证"
+  },
+  "aboutHeading": {
+    "message": "关于扩展"
+  },
+  "aboutDescription": {
+    "message": "将打开的标签页与 Chrome 原生分组导出为 Markdown 或 JSON，也可以导入兼容 JSON 文件，重新打开其中的网址与分组。导出保留窗口结构、分组顺序、组名、颜色和折叠状态。恢复会创建新标签页；文件未保存页面编辑内容、前进后退记录或登录会话。"
+  },
+  "sourceLink": {
+    "message": "在 GitHub 查看源码"
+  },
+  "feedbackLink": {
+    "message": "反馈问题"
+  },
+  "supportHeading": {
+    "message": "支持开发者"
+  },
+  "supportDescription": {
+    "message": "全部功能免费，赞助完全自愿，不解锁功能，也不与评分或评价绑定。付款由你选择的支付平台处理。"
+  },
+  "supportUnconfigured": {
+    "message": "赞助渠道尚未配置。你也可以通过反馈问题或在 GitHub 贡献代码支持开发。"
+  },
+  "coffeeLink": {
+    "message": "支持我的 Token 开销"
+  },
+  "wechatLabel": {
+    "message": "微信"
+  },
+  "alipayLabel": {
+    "message": "支付宝"
+  },
+  "scanWechat": {
+    "message": "使用微信扫描"
+  },
+  "scanAlipay": {
+    "message": "使用支付宝扫描"
+  },
+  "coffeeQrAlt": {
+    "message": "开发者 Buy Me a Coffee 页面的二维码"
+  },
+  "wechatQrAlt": {
+    "message": "开发者微信收款二维码"
+  },
+  "alipayQrAlt": {
+    "message": "开发者支付宝收款二维码"
+  },
+  "privacyHeading": {
+    "message": "隐私政策"
+  },
+  "privacyDate": {
+    "message": "生效日期：2026 年 10 月 6 日。发布者：Chai Wang。扩展版本：1.0.0。"
+  },
+  "privacyData": {
+    "message": "打开弹窗或刷新列表时，扩展读取普通窗口中的标签页标题、完整网址、窗口结构及原生分组的组名、颜色和折叠状态，供你选择。导出时重新读取所选窗口，仅导出仍存在的已选页面。浏览器临时编号和位置用于整理选择，不写入文件。隐身窗口和本扩展自身页面被排除。选择导入文件时，扩展在本机读取其中的 JSON 内容，验证并预览网址和分组；只有点击恢复后，才根据该文件创建标签页、窗口与分组。"
+  },
+  "privacyLocal": {
+    "message": "文件与标签页数据仅在本机处理，扩展不将文件或标签页清单上传给开发者或分析服务，不包含统计、广告、追踪或远程执行代码。恢复标签页会访问导入的网址：Chrome 随后使用现有浏览器会话正常访问对应网站，网站按自身隐私政策处理访问。"
+  },
+  "privacyStorage": {
+    "message": "扩展仅在本机保存界面语言偏好，不存储浏览记录存档或导入文件。弹窗选择和导入预览暂存于页面内存。恢复任务在完成或停止前，将待打开的网址暂存于后台内存，因此关闭导入页面后仍可继续；最近一次任务的数量及最多 20 条问题路径会在后台内存中保留，直至被新任务替换或后台／浏览器停止。浏览器重启或扩展重新加载会中断任务。同一弹窗中的窗口切换、未分组显示及刷新保留原有选择，新发现的页面默认选中，新窗口默认不勾选。导出文件保留在你选择的位置，直至自行删除；Chrome 可能保留普通下载记录。"
+  },
+  "privacySharing": {
+    "message": "开发者不出售、共享或使用标签页／文件数据进行广告、画像、信用评估或本地导出与恢复之外的用途。打开 GitHub 或赞助链接不会向该网站发送标签页数据或文件内容。恢复的网站会收到浏览器对其自身网址的正常访问请求。"
+  },
+  "privacySponsors": {
+    "message": "如果你选择访问 Buy Me a Coffee、微信、支付宝或 GitHub，相应服务按其自身隐私政策处理你的操作。扩展不收集付款信息、不接收付款通知、不验证赞助，也不将付款与你的标签页关联。支付平台可能向开发者提供其通常共享的赞助者信息。"
+  },
+  "privacyExport": {
+    "message": "导出文件包含完整网址，其中可能有私人链接或访问参数。分享前请自行检查。浏览器内部网址及其他非网页网址在 Markdown 中以文本显示，JSON 保留原始网址。"
+  },
+  "privacyLimitedUse": {
+    "message": "从 Chrome 接口获得的数据遵守 Chrome 商店用户数据政策及有限用途(Limited Use)要求，仅用于用户明确请求且可见的本地标签页导出与恢复功能。"
+  },
+  "privacyContact": {
+    "message": "如有隐私问题，请通过本仓库的 GitHub Issues 联系 Chai Wang。公开反馈中请勿附带私人标签页网址、访问令牌或付款信息。"
+  },
+  "licenseNote": {
+    "message": "© 2026 Chai Wang · MIT 许可证 · 版本 1.0.0"
+  },
+  "selectWindows": {
+    "message": "选择窗口"
+  },
+  "selectedWindows": {
+    "message": "已选窗口和标签页"
+  },
+  "selectTabs": {
+    "message": "选择标签页"
+  },
+  "selectAll": {
+    "message": "全选"
+  },
+  "selectedContent": {
+    "message": "已选内容"
+  },
+  "settingsLink": {
+    "message": "设置"
+  },
+  "languageLabel": {
+    "message": "界面语言"
+  },
+  "browserLanguage": {
+    "message": "跟随浏览器语言"
+  },
+  "languageDescription": {
+    "message": "用于扩展界面与 Markdown 导出。Chrome 管理页面的文字跟随浏览器语言。"
+  },
+  "settingsSaved": {
+    "message": "语言已保存在本机。"
+  },
+  "settingsError": {
+    "message": "无法保存语言，请重试。"
+  },
+  "noneSelected": {
+    "message": "尚未选择标签页，请勾选标签页或分组后导出。"
+  },
+  "selectionCount": {
+    "message": "已选 $ARG1$ / $ARG2$ 页",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      }
+    }
+  },
+  "windowSelectionCount": {
+    "message": "已选 $ARG1$ / $ARG2$ 个窗口",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      }
+    }
+  },
+  "expandGroup": {
+    "message": "展开 $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "collapseGroup": {
+    "message": "收起 $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "selectionSummary": {
+    "message": "已选"
+  },
+  "exportActions": {
+    "message": "导出已选标签页"
+  },
+  "settingsDescription": {
+    "message": "设置界面与 Markdown 导出语言。"
+  },
+  "settingsLocal": {
+    "message": "偏好仅保存在本机"
+  },
+  "importLink": {
+    "message": "导入 JSON"
+  },
+  "importHeading": {
+    "message": "导入并恢复标签页"
+  },
+  "importChooseFile": {
+    "message": "选择 JSON 文件"
+  },
+  "importFileHelp": {
+    "message": "选择 Chrome Tabs Exporter 格式的 JSON 文件。必需内容为窗口结构、标签页数组及每页的 url；标题和分组属性可省略。选择文件后先预览，不会立即打开页面。"
+  },
+  "importPreviewHeading": {
+    "message": "文件预览"
+  },
+  "importDestination": {
+    "message": "恢复到哪里"
+  },
+  "importNewWindows": {
+    "message": "创建新窗口"
+  },
+  "importNewWindowsHelp": {
+    "message": "按文件中的窗口结构恢复，保留当前已打开的页面。"
+  },
+  "importCurrentWindow": {
+    "message": "追加到当前窗口"
+  },
+  "importCurrentWindowHelp": {
+    "message": "将文件中的窗口合并到本页所在窗口；同名分组也各自保留。"
+  },
+  "importLimits": {
+    "message": "恢复网址、组名、颜色和折叠状态；打开后的标题由网站提供。此 JSON 格式未保存页面编辑内容、前进后退记录、登录会话、固定状态，以及分组与未分组页面之间的精确位置。"
+  },
+  "importNavigation": {
+    "message": "文件仅在本机处理。恢复会打开其中的网址，浏览器会正常访问对应网站。重复网址会保留；不支持的网址会跳过并在上方列出。本地文件及 Chrome 页面仍受浏览器限制。"
+  },
+  "importRestore": {
+    "message": "恢复标签页"
+  },
+  "importRestoreCount": {
+    "message": "恢复 $ARG1$ 个标签页",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReading": {
+    "message": "正在读取本地文件…"
+  },
+  "importReady": {
+    "message": "文件可恢复。请检查预览并选择恢复位置。"
+  },
+  "importNoTabs": {
+    "message": "文件中没有可恢复的网址。"
+  },
+  "importJsonError": {
+    "message": "JSON 无法解析。请选择原始导出文件，或修正文件语法。"
+  },
+  "importStructureError": {
+    "message": "JSON 结构或字段类型不正确，请检查后方标明的字段路径。"
+  },
+  "importVersionError": {
+    "message": "不支持此 schemaVersion。当前支持 1，也允许省略该字段。"
+  },
+  "importFileError": {
+    "message": "无法读取文件，请重新选择。"
+  },
+  "importInvalidUrl": {
+    "message": "网址无效或为空"
+  },
+  "importUnsupportedUrl": {
+    "message": "不支持此网址协议或 Chrome 页面"
+  },
+  "importSkipped": {
+    "message": "将跳过 $ARG1$ 个网址",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importIssueSample": {
+    "message": "最多显示前 20 条问题；数组编号从 0 开始。"
+  },
+  "importProgressHeading": {
+    "message": "恢复进度"
+  },
+  "importStop": {
+    "message": "停止打开"
+  },
+  "importStopping": {
+    "message": "正在停止…"
+  },
+  "importRunning": {
+    "message": "已打开 $ARG1$ 个标签页 · 已处理 $ARG2$ / $ARG3$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      },
+      "arg3": {
+        "content": "$3"
+      }
+    }
+  },
+  "importComplete": {
+    "message": "恢复完成，已打开 $ARG1$ 个标签页。",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importPartial": {
+    "message": "恢复已结束，部分操作出现问题。已打开 $ARG1$ 个标签页，请检查下方详情。",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importCancelled": {
+    "message": "已停止，保留已打开的 $ARG1$ 个标签页。",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importInterrupted": {
+    "message": "恢复过程已中断。重新选择文件前，请先检查已打开的页面。"
+  },
+  "importResultCounts": {
+    "message": "$ARG1$ 个窗口 · $ARG2$ 个分组 · $ARG3$ 个页面打开失败 · $ARG4$ 个分组操作异常 · $ARG5$ 个网址跳过 · $ARG6$ 个尚未尝试",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      },
+      "arg3": {
+        "content": "$3"
+      },
+      "arg4": {
+        "content": "$4"
+      },
+      "arg5": {
+        "content": "$5"
+      },
+      "arg6": {
+        "content": "$6"
+      }
+    }
+  },
+  "importContinues": {
+    "message": "任务在扩展后台运行。关闭本页后，可重新打开“导入 JSON”查看进度或停止。完成后重新选择文件，才会开始另一次恢复。"
+  },
+  "importErrorDetails": {
+    "message": "操作详情"
+  },
+  "importBusy": {
+    "message": "已有恢复任务在运行，下方显示其进度。"
+  },
+  "importStartFailed": {
+    "message": "无法启动恢复，请检查当前窗口后重试。"
+  },
+  "importStopFailed": {
+    "message": "停止请求未成功，请重试。"
+  },
+  "importWindowFailed": {
+    "message": "无法创建窗口，其中的标签页未打开"
+  },
+  "importTabFailed": {
+    "message": "Chrome 未能打开此标签页"
+  },
+  "importGroupFailed": {
+    "message": "分组信息未能完整恢复，已打开的页面保留"
+  },
+  "importCleanupFailed": {
+    "message": "未能移除临时空白页或窗口"
+  },
+  "scanCoffee": {
+    "message": "扫码打开我的 Buy Me a Coffee 页面，也可以直接点击上方按钮。"
+  }
+}

@@ -1,0 +1,25 @@
+name: Bug report / 问题反馈
+description: Report an export or UI problem using public example tabs.
+body:
+  - type: markdown
+    attributes:
+      value: "Please remove private URLs, tokens and payment data. 请勿附带私人网址、令牌或付款资料。"
+  - type: input
+    id: environment
+    attributes:
+      label: Chrome / OS / Extension version
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps to reproduce / 复现步骤
+      description: Use public example URLs and describe group/window structure.
+    validations:
+      required: true
+  - type: textarea
+    id: result
+    attributes:
+      label: Expected and actual result / 预期与实际结果
+    validations:
+      required: true

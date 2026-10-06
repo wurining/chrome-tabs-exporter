@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Chrome Tabs Exporter</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body class="import-page">
+  <main class="import-app">
+    <header class="brand import-header">
+      <img src="assets/icons/icon-48.png" alt="" width="36" height="36">
+      <div><h1 data-i18n="importHeading"></h1><p>Chrome Tabs Exporter</p></div>
+      <a class="ghost-button" href="about.html#privacy" data-i18n="privacyLink"></a>
+    </header>
+    <section class="import-card">
+      <div class="import-section-title"><span class="step-number">1</span><h2 data-i18n="importChooseFile"></h2></div>
+      <p class="import-description" data-i18n="importFileHelp"></p>
+      <button id="choose-import-file" class="file-button secondary" type="button"><span data-icon="import"></span><span data-i18n="importChooseFile"></span></button>
+      <input id="import-file" type="file" tabindex="-1" accept=".json,application/json" data-i18n-label="importChooseFile">
+      <p id="file-name" class="import-description"></p>
+      <p id="file-status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+    </section>
+    <section id="import-preview-section" class="import-card" hidden>
+      <div class="import-section-title"><span class="step-number">2</span><h2 data-i18n="importPreviewHeading"></h2></div>
+      <div class="import-counts">
+        <div><strong id="import-window-count">0</strong><span data-i18n="windowsLabel"></span></div>
+        <div><strong id="import-group-count">0</strong><span data-i18n="groupsLabel"></span></div>
+        <div><strong id="import-tab-count">0</strong><span data-i18n="tabsLabel"></span></div>
+      </div>
+      <div id="import-preview" class="import-preview" tabindex="0" data-i18n-label="importPreviewHeading"></div>
+      <details id="import-warnings" class="import-notice" hidden><summary id="warning-summary"></summary><ul id="warning-list"></ul><p data-i18n="importIssueSample"></p></details>
+    </section>
+    <section id="restore-section" class="import-card" hidden>
+      <div class="import-section-title"><span class="step-number">3</span><h2 data-i18n="importDestination"></h2></div>
+      <fieldset id="restore-options" class="restore-options">
+        <legend class="sr-only" data-i18n="importDestination"></legend>
+        <label><input type="radio" name="restore-mode" value="new" checked><span><strong data-i18n="importNewWindows"></strong><small data-i18n="importNewWindowsHelp"></small></span></label>
+        <label><input type="radio" name="restore-mode" value="current"><span><strong data-i18n="importCurrentWindow"></strong><small data-i18n="importCurrentWindowHelp"></small></span></label>
+      </fieldset>
+      <p class="import-description" data-i18n="importLimits"></p>
+      <p class="import-description" data-i18n="importNavigation"></p>
+      <button id="restore" class="primary" type="button" disabled><span data-icon="import"></span><span id="restore-label" data-i18n="importRestore"></span></button>
+    </section>
+    <section id="restore-result" class="import-card" hidden>
+      <div class="import-section-title"><h2 data-i18n="importProgressHeading"></h2><button id="cancel-restore" class="ghost-button" type="button" data-i18n="importStop" hidden></button></div>
+      <progress id="restore-progress" max="1" value="0" data-i18n-label="importProgressHeading"></progress>
+      <p id="restore-status" class="status" role="status" aria-live="polite" aria-atomic="true"></p>
+      <p id="restore-details" class="import-description"></p>
+      <p id="restore-continuation" class="import-description" data-i18n="importContinues" hidden></p>
+      <details id="restore-errors" class="import-notice" hidden><summary data-i18n="importErrorDetails"></summary><ul id="restore-error-list"></ul><p data-i18n="importIssueSample"></p></details>
+    </section>
+    <footer class="footer"><a href="about.html" data-i18n="supportLink"></a><span>© 2026 Chai Wang · MIT</span></footer>
+  </main>
+  <script type="module" src="import.js"></script>
+</body>
+</html>

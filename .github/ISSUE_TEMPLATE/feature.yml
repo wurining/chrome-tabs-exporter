@@ -1,0 +1,9 @@
+name: Feature request / 功能建议
+description: Describe a use case related to tab export.
+body:
+  - type: textarea
+    id: request
+    attributes:
+      label: Use case and requested behavior / 使用场景与所需行为
+    validations:
+      required: true

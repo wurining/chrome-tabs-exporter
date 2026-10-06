@@ -1,0 +1,471 @@
+{
+  "extensionDescription": {
+    "message": "Export Chrome tabs and groups to Markdown or JSON, and restore tabs from JSON. All file processing stays local."
+  },
+  "tagline": {
+    "message": "Export tabs & groups to Markdown or JSON"
+  },
+  "exportSettings": {
+    "message": "Export settings"
+  },
+  "scopeLabel": {
+    "message": "Scope"
+  },
+  "currentWindow": {
+    "message": "Current window"
+  },
+  "allWindows": {
+    "message": "All windows"
+  },
+  "includeUngrouped": {
+    "message": "Include ungrouped tabs"
+  },
+  "windowsLabel": {
+    "message": "Windows"
+  },
+  "groupsLabel": {
+    "message": "Groups"
+  },
+  "tabsLabel": {
+    "message": "Tabs"
+  },
+  "refresh": {
+    "message": "Refresh"
+  },
+  "privacyShort": {
+    "message": "Reads tab titles and links. Files are created only on this device."
+  },
+  "exportMarkdown": {
+    "message": "Export Markdown"
+  },
+  "exportJson": {
+    "message": "Export JSON"
+  },
+  "privacyLink": {
+    "message": "Privacy"
+  },
+  "supportLink": {
+    "message": "Support the developer"
+  },
+  "loading": {
+    "message": "Reading tabs and groups…"
+  },
+  "empty": {
+    "message": "No tabs in the selected windows. Choose another window or include ungrouped tabs."
+  },
+  "readError": {
+    "message": "Unable to read tabs. Refresh to try again."
+  },
+  "preparing": {
+    "message": "Preparing your file…"
+  },
+  "downloadStarted": {
+    "message": "Download started. Check Chrome’s downloads for the saved file."
+  },
+  "downloadNotStarted": {
+    "message": "File not saved. The save dialog may have been canceled, or the download could not start. Try again."
+  },
+  "windowLabel": {
+    "message": "Window $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledGroup": {
+    "message": "Untitled group $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "untitledTab": {
+    "message": "Untitled tab"
+  },
+  "tabCount": {
+    "message": "$ARG1$ tabs",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "ungroupedLabel": {
+    "message": "Ungrouped tabs"
+  },
+  "exportHeading": {
+    "message": "Chrome Tabs Export"
+  },
+  "exportTime": {
+    "message": "Exported at"
+  },
+  "colorLabel": {
+    "message": "Color"
+  },
+  "collapsedLabel": {
+    "message": "Collapsed"
+  },
+  "yes": {
+    "message": "Yes"
+  },
+  "no": {
+    "message": "No"
+  },
+  "aboutSubtitle": {
+    "message": "Local exports · Open source · MIT license"
+  },
+  "aboutHeading": {
+    "message": "About this extension"
+  },
+  "aboutDescription": {
+    "message": "Export open tabs and native Chrome tab groups to Markdown or JSON, or import a compatible JSON file to reopen its URLs and groups. Exports keep window boundaries, group order, names, colors and collapsed states. Restoration opens new tabs; page edits, navigation history and login sessions are not stored in the file."
+  },
+  "sourceLink": {
+    "message": "View source on GitHub"
+  },
+  "feedbackLink": {
+    "message": "Report an issue"
+  },
+  "supportHeading": {
+    "message": "Support the developer"
+  },
+  "supportDescription": {
+    "message": "Every feature is free. Support is entirely optional and does not unlock features or affect reviews. Payments are handled by the provider you choose."
+  },
+  "supportUnconfigured": {
+    "message": "No payment channels are configured yet. You can also help by reporting issues or contributing on GitHub."
+  },
+  "coffeeLink": {
+    "message": "Buy me a token"
+  },
+  "wechatLabel": {
+    "message": "WeChat"
+  },
+  "alipayLabel": {
+    "message": "Alipay"
+  },
+  "scanWechat": {
+    "message": "Scan with WeChat"
+  },
+  "scanAlipay": {
+    "message": "Scan with Alipay"
+  },
+  "coffeeQrAlt": {
+    "message": "QR code for the developer’s Buy Me a Coffee page"
+  },
+  "wechatQrAlt": {
+    "message": "Developer’s WeChat payment QR code"
+  },
+  "alipayQrAlt": {
+    "message": "Developer’s Alipay payment QR code"
+  },
+  "privacyHeading": {
+    "message": "Privacy policy"
+  },
+  "privacyDate": {
+    "message": "Effective date: October 6, 2026. Publisher: Chai Wang. Extension version: 1.0.0."
+  },
+  "privacyData": {
+    "message": "When you open the popup or refresh its list, the extension reads tab titles, full URLs, window boundaries and native group names, colors and collapsed states in normal windows for selection. Export re-reads selected windows and includes only selected tabs still present. Temporary browser IDs and positions organize selections and are omitted from files. Incognito windows and this extension’s own pages are excluded. When you choose an import file, the extension reads its JSON contents locally to validate and preview URLs and groups. Only after you request restoration does it create tabs, windows and groups from that file."
+  },
+  "privacyLocal": {
+    "message": "File and tab data are processed only on your device. The extension does not upload files or tab lists to the developer or an analytics service. It has no analytics, ads, tracking or remotely executed code. Restoring tabs navigates to the imported URLs: Chrome then contacts those websites normally, under their own privacy policies, using your existing browser session."
+  },
+  "privacyStorage": {
+    "message": "Only the interface language preference is saved in local extension storage. No browsing archive or imported file is stored by the extension. Popup selections and import previews stay temporarily in page memory. A restoration job holds its URLs in background memory until it finishes or stops, allowing it to continue after the import page closes; its latest counts and up to 20 issue paths remain in background memory until replaced or the worker/browser stops. A browser restart or extension reload interrupts the job. Existing popup choices survive window changes, ungrouped visibility and refresh while open; newly discovered tabs start selected and new windows unchecked. Exported files remain where you save them until deleted; Chrome may keep normal download records."
+  },
+  "privacySharing": {
+    "message": "The developer does not sell, share or use tab/file data for advertising, profiling, creditworthiness or purposes outside local tab export and restoration. Opening GitHub or a support link sends no tab data or file contents to that website. Restored websites receive normal browser navigation requests for their own URLs."
+  },
+  "privacySponsors": {
+    "message": "If you choose to visit Buy Me a Coffee, WeChat, Alipay, or GitHub, that service processes your interactions under its own privacy policy. The extension does not collect payment details, receive payment notifications, verify sponsorship, or link payments to your tabs. A payment provider may provide the developer with the sponsor details it normally shares."
+  },
+  "privacyExport": {
+    "message": "Exported files contain complete URLs, which may include private links or access parameters. Check the file before sharing it. Browser-internal and non-web URLs are exported as text in Markdown; JSON retains the original URL."
+  },
+  "privacyLimitedUse": {
+    "message": "Use of data received from Chrome APIs complies with the Chrome Web Store User Data Policy, including Limited Use requirements. Data is used only for the visible, user-requested local tab export and restoration features."
+  },
+  "privacyContact": {
+    "message": "For privacy questions, contact Chai Wang through this repository’s GitHub Issues. Do not include private tab URLs, tokens, or payment information in a public issue."
+  },
+  "licenseNote": {
+    "message": "© 2026 Chai Wang · MIT license · Version 1.0.0"
+  },
+  "selectWindows": {
+    "message": "Select windows"
+  },
+  "selectedWindows": {
+    "message": "Selected windows and tabs"
+  },
+  "selectTabs": {
+    "message": "Select Tabs"
+  },
+  "selectAll": {
+    "message": "Select all"
+  },
+  "selectedContent": {
+    "message": "Selected content"
+  },
+  "settingsLink": {
+    "message": "Settings"
+  },
+  "languageLabel": {
+    "message": "Interface language"
+  },
+  "browserLanguage": {
+    "message": "Follow browser language"
+  },
+  "languageDescription": {
+    "message": "Used for the extension interface and Markdown exports. Chrome’s management page follows the browser language."
+  },
+  "settingsSaved": {
+    "message": "Language saved on this device."
+  },
+  "settingsError": {
+    "message": "Unable to save the language. Try again."
+  },
+  "noneSelected": {
+    "message": "No tabs selected. Check a tab or a group to export."
+  },
+  "selectionCount": {
+    "message": "$ARG1$ / $ARG2$ tabs",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      }
+    }
+  },
+  "windowSelectionCount": {
+    "message": "$ARG1$ / $ARG2$ windows",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      }
+    }
+  },
+  "expandGroup": {
+    "message": "Expand $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "collapseGroup": {
+    "message": "Collapse $ARG1$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "selectionSummary": {
+    "message": "Selected"
+  },
+  "exportActions": {
+    "message": "Export selected tabs"
+  },
+  "settingsDescription": {
+    "message": "Choose your interface language."
+  },
+  "settingsLocal": {
+    "message": "Saved only on this device"
+  },
+  "importLink": {
+    "message": "Import JSON"
+  },
+  "importHeading": {
+    "message": "Import & restore tabs"
+  },
+  "importChooseFile": {
+    "message": "Choose JSON file"
+  },
+  "importFileHelp": {
+    "message": "Choose a Chrome Tabs Exporter JSON file. Required: windows, tab arrays and each tab’s url. Titles and group details are optional. Selecting a file only previews it."
+  },
+  "importPreviewHeading": {
+    "message": "File preview"
+  },
+  "importDestination": {
+    "message": "Restore destination"
+  },
+  "importNewWindows": {
+    "message": "Create new windows"
+  },
+  "importNewWindowsHelp": {
+    "message": "Keep the window boundaries in the file. Existing tabs stay open."
+  },
+  "importCurrentWindow": {
+    "message": "Append to this window"
+  },
+  "importCurrentWindowHelp": {
+    "message": "Combine imported windows here. Keep each group separate, including groups with identical names."
+  },
+  "importLimits": {
+    "message": "Restores URLs, group names, colors and collapsed states. Tab titles come from the reopened sites. Page edits, back/forward history, login sessions, pinned states and exact positions between groups and ungrouped tabs are not stored in this JSON format."
+  },
+  "importNavigation": {
+    "message": "The file is processed locally. Restoring opens its URLs and visits those websites normally. Duplicate URLs are kept. Unsupported URLs are skipped and listed above; local files and Chrome pages remain subject to browser restrictions."
+  },
+  "importRestore": {
+    "message": "Restore tabs"
+  },
+  "importRestoreCount": {
+    "message": "Restore tabs ($ARG1$)",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importReading": {
+    "message": "Reading local file…"
+  },
+  "importReady": {
+    "message": "Ready to restore. Review the preview and choose a destination."
+  },
+  "importNoTabs": {
+    "message": "This file contains no supported URLs to restore."
+  },
+  "importJsonError": {
+    "message": "Invalid JSON. Choose an unmodified JSON export or fix its syntax."
+  },
+  "importStructureError": {
+    "message": "The JSON structure or field type is invalid. See the field path below."
+  },
+  "importVersionError": {
+    "message": "Unsupported schemaVersion. This version accepts 1 or an omitted version."
+  },
+  "importFileError": {
+    "message": "Unable to read this file. Choose it again."
+  },
+  "importInvalidUrl": {
+    "message": "Invalid or empty URL"
+  },
+  "importUnsupportedUrl": {
+    "message": "Unsupported URL scheme or Chrome page"
+  },
+  "importSkipped": {
+    "message": "$ARG1$ URLs will be skipped",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importIssueSample": {
+    "message": "Up to the first 20 issues are shown. Array indexes start at 0."
+  },
+  "importProgressHeading": {
+    "message": "Restore progress"
+  },
+  "importStop": {
+    "message": "Stop opening tabs"
+  },
+  "importStopping": {
+    "message": "Stopping…"
+  },
+  "importRunning": {
+    "message": "Tabs opened: $ARG1$ · processed $ARG2$ / $ARG3$",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      },
+      "arg3": {
+        "content": "$3"
+      }
+    }
+  },
+  "importComplete": {
+    "message": "Restore complete. Tabs opened: $ARG1$.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importPartial": {
+    "message": "Restore finished with issues. Tabs opened: $ARG1$; review the details below.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importCancelled": {
+    "message": "Stopped. Tabs kept: $ARG1$.",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      }
+    }
+  },
+  "importInterrupted": {
+    "message": "The restore was interrupted. Review the opened tabs before choosing the file again."
+  },
+  "importResultCounts": {
+    "message": "$ARG1$ windows · $ARG2$ groups · $ARG3$ failed tabs · $ARG4$ group issues · $ARG5$ skipped URLs · $ARG6$ not attempted",
+    "placeholders": {
+      "arg1": {
+        "content": "$1"
+      },
+      "arg2": {
+        "content": "$2"
+      },
+      "arg3": {
+        "content": "$3"
+      },
+      "arg4": {
+        "content": "$4"
+      },
+      "arg5": {
+        "content": "$5"
+      },
+      "arg6": {
+        "content": "$6"
+      }
+    }
+  },
+  "importContinues": {
+    "message": "This runs in the extension background. You can close this page and reopen Import JSON to check progress or stop. After completion, choose a file again to start another restore."
+  },
+  "importErrorDetails": {
+    "message": "Operation details"
+  },
+  "importBusy": {
+    "message": "Another restore is already running. Its progress is shown below."
+  },
+  "importStartFailed": {
+    "message": "Unable to start. Check the current window and try again."
+  },
+  "importStopFailed": {
+    "message": "Unable to request a stop. Try again."
+  },
+  "importWindowFailed": {
+    "message": "Could not create a window; its tabs were not opened"
+  },
+  "importTabFailed": {
+    "message": "Chrome could not open this tab"
+  },
+  "importGroupFailed": {
+    "message": "Could not restore group metadata; opened tabs are kept"
+  },
+  "importCleanupFailed": {
+    "message": "Could not remove the temporary blank tab/window"
+  },
+  "scanCoffee": {
+    "message": "Scan to open my Buy Me a Coffee page, or use the button above."
+  }
+}

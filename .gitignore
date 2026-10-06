@@ -1,0 +1,15 @@
+node_modules/
+dist/
+test-results/
+playwright-report/
+.DS_Store
+*.tmp
+.local/
+private/
+local/
+# Maintainer-only notes and raw browser captures do not belong in the public tree.
+docs/PUBLISHING.md
+docs/STORE_LISTING.md
+docs/VERIFICATION.md
+docs/SUPPORT.md
+docs/store-assets/source/*.png
