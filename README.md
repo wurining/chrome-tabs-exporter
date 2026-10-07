@@ -74,6 +74,8 @@ npm run package
 
 The deterministic ZIP is written to `dist/chrome-tabs-exporter-1.0.0.zip` with a SHA-256 checksum. Its root contains `manifest.json`; source docs, tests, dependencies and CI files are excluded. Browser tests also verify an installation extracted from that ZIP.
 
+CI uploads the ZIP and checksum as a workflow artifact. Pushing a matching version tag such as `v1.0.0` also prepares a GitHub Release draft with those same verified files and changelog notes. Draft publication stays manual.
+
 ## JSON format
 
 Version 1 exports `schemaVersion`, `exportedAt` (UTC), `scope` (`selected` for the checkbox UI; legacy readers also accept `current` or `all`), `includeUngrouped`, and `windows`. Each window contains `groups` and `ungroupedTabs`. A group entry contains `group: {title, color, collapsed}` and `tabs`. Each tab is `{title, url}`. Array order preserves group/tab ordering; the focused window comes first. Browser IDs, selected ID lists and unused Chrome metadata are omitted. Imports require only the window/tab structure and `url`; other fields are optional. Schema version 1 and omitted versions are accepted. See [JSON_FORMAT.md](docs/JSON_FORMAT.md) for minimal examples, defaults and validation. The prototype's raw Chrome-object JSON is not a supported public format.

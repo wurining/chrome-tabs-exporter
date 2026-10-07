@@ -10,6 +10,8 @@ Add tests for behavior changes to collection, export formatting, filtering, down
 
 Version changes must update the manifest and package together. Review localized version/effective-date strings and changelog before release. The CI produces the store ZIP, but never submits an extension to the Chrome Web Store automatically.
 
+Push an explicitly approved version tag such as `v1.0.0` to prepare a GitHub Release draft. The tag must match both the manifest and package version. After verification passes, the release job downloads that same run's CI artifact, checks the ZIP version and SHA-256 checksum, and attaches the ZIP and checksum file to the draft with notes from `CHANGELOG.md`. Ordinary pushes and pull requests only produce CI artifacts. Reruns may update a draft's attachments; they refuse to overwrite a published release. Publish the draft when the Chrome Web Store release is ready.
+
 Please use public example URLs in fixtures and issues. Never attach private exported browsing data. Contributions are licensed under MIT.
 
 Follow [AGENTS.md](AGENTS.md) for the public-file boundary, local output locations and remote publishing constraints. Contributions do not grant repository management access.
