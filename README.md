@@ -82,6 +82,6 @@ Version 1 exports `schemaVersion`, `exportedAt` (UTC), `scope` (`selected` for t
 
 All features are free. If this extension helps you, you can [Buy me a token on Buy Me a Coffee](https://buymeacoffee.com/chaiwang). The About page includes a local button and QR for the same public page. Support does not unlock features or affect reviews. No remote payment widget or font is loaded. WeChat and Alipay stay hidden until public payment codes are configured.
 
-The repository contains user documentation, the JSON specification, privacy policy and selected public demo artwork. Account material, store submission drafts and operational notes are kept separately. Documentation deployment uses a manual Pages workflow.
+The repository contains user documentation, the JSON specification, privacy policy and selected public demo artwork. Account material, store submission drafts and operational notes are kept separately. GitHub Pages automatically deploys `docs/site/` after each push to `main`; the workflow also supports manual deployment from `main`.
 
 Issues and contributions are welcome. Please remove private URLs and tokens from reports. Licensed under [MIT](LICENSE). This is an independent project and does not claim affiliation with Google.

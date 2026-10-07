@@ -14,4 +14,4 @@ Please use public example URLs in fixtures and issues. Never attach private expo
 
 Follow [AGENTS.md](AGENTS.md) for the public-file boundary, local output locations and remote publishing constraints. Contributions do not grant repository management access.
 
-`npm run pages:prepare` creates a local website-only file tree under `.local/github-pages-site/`, with the public pages and the manual Pages workflow. The workflow deploys only the already generated `docs/site/` files, so publishing the privacy page does not require uploading extension source. This preparation command never pushes or deploys.
+`npm run pages:prepare` creates a local website-only file tree under `.local/github-pages-site/`, with the public pages and the Pages workflow. The workflow deploys only the already generated `docs/site/` files after each push to `main`, and also supports manual runs from `main`. Run `npm run docs` when changing the locale resources or sponsor configuration so the generated public pages stay current. This preparation command never pushes or deploys.
